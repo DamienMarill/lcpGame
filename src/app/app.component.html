@@ -18,7 +18,7 @@
     </tbody>
   </table>
 </div>
-<div *ngIf="!start" class="w-full h-full bg-warmGray-900 bg-opacity-20 flex justify-center items-center absolute left-0 top-0 backdrop-filter backdrop-blur-sm">
+<div *ngIf="!start" class="w-full h-full bg-warmGray-900 bg-opacity-20 flex justify-center items-center fixed left-0 top-0 backdrop-filter backdrop-blur-sm">
   <div class="p-5 rounded-lg bg-warmGray-900 bg-opacity-90 w-11/12 md:w-8/12 lg:5/12 xl:w-4/12 2xl:3/12 3xl:2/12 text-white">
     <div *ngIf="!end" class="flex justify-center items-center flex-col">
       <h1 class="text-green-600 font-extrabold text-4xl lg:text-5xl mb-8">Attrape Eliott !</h1>
@@ -39,7 +39,7 @@
           <td class="pl-2 text-left border-r border-warmGray-600" [class.text-amber-500]="i == 0" [class.text-blueGray-300]="i == 1" [class.text-amber-800]="i == 2"># {{ i+1 }}</td>
           <td class="pl-2">{{ score.pseudo }}</td>
           <td class="text-green-600 border-r border-warmGray-600">{{ score.points }} pts</td>
-          <td class="pr-2 text-right">{{ moment(score.date).format('L') }}</td>
+          <td class="pr-2 text-right">{{ moment(score.date).format('DD/MM/YYYY') }}</td>
         </tr>
       </table>
       <button type="button" class="btn btn-green text-white py-2 px-3" (click)="startGame()">Rejouer</button>
