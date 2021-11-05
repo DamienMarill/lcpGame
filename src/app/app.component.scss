@@ -1,0 +1,13 @@
+table{
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+.sieges {
+
+  user-select: none;
+
+  & td{
+    @apply w-10 h-10 md:w-20 md:h-20 p-0;
+  }
+}
+

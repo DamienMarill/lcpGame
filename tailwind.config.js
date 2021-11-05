@@ -100,7 +100,7 @@ function genBtn(theme, colors){
 module.exports = {
   prefix: '',
   purge: {
-    enabled: false,
+    enabled: true,
     content: [
       './src/**/*.{html,ts}',
     ],
@@ -135,8 +135,8 @@ module.exports = {
       warmGray : colors.warmGray,
       trueGray : colors.trueGray,
       gray : colors.gray,
-      coolGray : colors.coolGray,
-      blueGray : colors.blueGray,
+      coolGray: colors.coolGray,
+      blueGray: colors.blueGray,
       base: {
         blue : colors.blue["500"],
         red : colors.red["500"],
@@ -150,8 +150,6 @@ module.exports = {
         yellow : colors.yellow["500"],
         orange : colors.orange["500"],
         gray: colors.coolGray["500"],
-        mb: marillColor.blue["900"],
-        mg: marillColor.gold["500"]
       },
       crea: {
         dev: colors.violet,
